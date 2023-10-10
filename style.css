@@ -18,6 +18,52 @@ body {
     justify-content: center;
 }
 
+header {
+    height: 79px;
+    display : flex;
+    justify-content : space-between;
+    align-items: flex-start;
+
+}
+
+.box-logo {
+    width: 161.09px;
+    height: 79px;
+
+}
+
+#logo-desktop {
+    width: 61.09px;
+    height: 19px;
+    padding : 30px 50px 30px 50px;
+}
+
+.menu-desktop {
+    width: 344px;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 0px;
+    
+}
+
+.menu-desktop li {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px, 50px, 0px, 50px;
+    width: 113px;
+    height: 35px;
+    
+}
+
+
+.menu-desktop li:hover {
+    color: #0065FC;
+    border-top : #0065FC solid 2px;
+
+}
+
+
+
 .main-container {
     width: 100%;
     max-width: 1440px;
