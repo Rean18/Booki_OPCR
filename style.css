@@ -14,28 +14,35 @@
 }
 
 body {
+    width: 1440px;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    
 }
 
 header {
+    width: 1440px;
     height: 79px;
+    padding: 0px;
     display : flex;
     justify-content : space-between;
     align-items: flex-start;
+    
 
 }
 
 .box-logo {
     width: 161.09px;
     height: 79px;
+    
 
 }
 
 #logo-desktop {
     width: 61.09px;
     height: 19px;
-    padding : 30px 50px 30px 50px;
+    padding : 30px 0px 30px 50px;
 }
 
 .menu-desktop {
@@ -111,16 +118,20 @@ a {
 /******* Search **********/
 
 .search {
+    width: 1340px;
+    margin:auto;
     margin-top: 35px;
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: space-between;
+    
 }
 
 form {
     width:377px;
     height:49px;
+    margin-top: 32px;
     display:flex;
     flex-direction:row;
     align-items:center;
@@ -162,15 +173,65 @@ form {
     height:51px;
     background-color: #0065FC;
     color: white;
+    font-weight: 700;
+    font-size: 18px;
     border: solid #0065FC 1px;
     border-left:none;
     border-radius: 0px 15px 15px 0px;
    
   }
 
+.filter-part {
+    width: 758px;
+    height: 50px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+
+}
+.filter {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+    
+}
+
+.filter-button {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    border:solid #D9D9D9 2px;
+    border-radius: 25px;
+    padding: 0px 19px 0px 19px ;
+    font-size: 16px;
+    font-weight:700;
+    column-gap: 10px;
+}
+
+.filter-button:hover {
+    background-color: #DEEBFF;
+}
 
 
+.info {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
+.info-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: #D9D9D9 solid 1px;
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    color: #0065FC;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
