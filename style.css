@@ -14,7 +14,7 @@
 }
 
 body {
-    width: 1440px;
+    max-width:1440px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    width: 1440px;
+    max-width: 1440px;
     height: 79px;
     padding: 0px;
     display : flex;
@@ -118,7 +118,7 @@ a {
 /******* Search **********/
 
 .search {
-    width: 1340px;
+    max-width: 1340px;
     margin:auto;
     margin-top: 35px;
     margin-bottom: 40px;
@@ -431,17 +431,38 @@ form {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .body {
+        max-width:1024px;
+    }
+    .header {
+        max-width: 1024px;
+    }
+
+    .search {
+        max-width: 924px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements {
-        width: 100%;
+        width: 90%;
+        margin: auto;
     }
 
+    .hebergements img {
+        max-width: 268px;
+    }
+
+   
+
     .populaires {
-        width: 100%;
+        width: 90%;
+        margin: auto;
         margin-top: 50px;
+        
     }
 
     .populaires-cards {
@@ -460,6 +481,25 @@ form {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activites{
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .activites-cards .card{
+        max-width: 193.5px;
+        max-height: 270px;
+    }
+
+    .activites-cards img {
+        max-height: 200px;
+    }
+
+    .activites-cards .card-title {
+        font-size: 16px;
     }
 }
 
