@@ -45,7 +45,7 @@ header {
     padding : 30px 0px 30px 50px;
 }
 
-.menu-desktop {
+.menu-nav {
     width: 344px;
     display:flex;
     justify-content: space-around;
@@ -53,17 +53,19 @@ header {
     
 }
 
-.menu-desktop li {
+.menu-nav li {
     display: flex;
     justify-content: space-around;
     padding: 0px, 50px, 0px, 50px;
     width: 113px;
     height: 35px;
+    font-size: 16px;
+    font-weight: 400;
     
 }
 
 
-.menu-desktop li:hover {
+.menu-nav li:hover {
     color: #0065FC;
     border-top : #0065FC solid 2px;
 
@@ -181,6 +183,11 @@ form {
    
   }
 
+  .search-button-icon {
+    visibility: hidden;
+    
+}
+
 .filter-part {
     width: 758px;
     height: 50px;
@@ -194,8 +201,31 @@ form {
 .filter {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin-left: 10px;
+    
+    
+}
+
+.filter-first {
+    display: flex;
+    width: 47%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 18px;
+    
+    
+    
+}
+
+.filter-second {
+    display: flex;
+    width: 53%;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5px;
+    column-gap: 18px;
+    
     
 }
 
@@ -221,6 +251,8 @@ form {
     display: flex;
     align-items: center;
     gap: 10px;
+   
+    
 }
 
 .info-icon {
@@ -513,5 +545,159 @@ form {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    
+
+    body {
+        min-width: 320px;
+    }
+
+    header {
+        width: 100% ;
+        min-height: 115px;
+        margin: auto;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .box-logo {
+        margin-top: 10px;
+        
+    }
+
+    .menu-nav {
+        min-width: 320px;
+        height: 19px;
+        padding-left: 0;
+        padding-top: 0;
+        display: flex;
+        
+    
+    }
+
+
+    .menu-nav li {
+        width: 100%;
+        height: 19px;
+        display: flex;
+        align-items: center;
+        
+    }
+
+
+    .menu-nav :hover {
+        color: #0065FC;
+        border-bottom : #0065FC solid 2px;
+        border-top: none;
+}
+
+    .menu-nav li:hover {
+       
+        border-top: none;
+}
+
+
+
+    .search {
+        min-width: 320px;
+        padding: 0px 20px 0px 20px;
+        
+    }
+
+    .search .section-title {
+        width: 100%;
+        
+    }
+
+    form {
+        width: 335px;
+        height: 47px;
+       
+    }
+
+    #search-button {
+        visibility: hidden;
+        display: none;
+        
+        
+    }
+
+    .search-button-icon {
+        visibility: visible;
+        
+        
+    }
+
+
+    .search-button-icon{
+        width: 51px;
+        height: 51px;
+        
+    }
+    #search-button-icon {
+        width: 100%;
+        height: 100%;
+        margin-left: -12px;
+        background-color: #0065FC;
+        border: 1px #0065FC;
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px 0px #00000040 ;
+    }
+
+    .filter-part {
+        width: 100%;
+        height: 100% ;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        margin-top:20px;
+        
+
+        
+    }
+
+    .filter-first {
+        width: 100%;
+        justify-content: flex-start;
+        column-gap: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        
+    }
+
+    .filter-second {
+        width: 100%;
+        justify-content: flex-start;
+        margin-left: 0;
+        column-gap: 10px;
+        
+    }
+
+    .filter {
+        
+        flex-direction: column;
+        margin-left :0;
+    
+       
+    }
+
+    .filter-button {
+        width: 162.5px;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 14px;
+        font-weight:700;
+        
+        
+    }
+
+    .info {
+        margin-top: 10px;
+    }
+
+    
+
 }
