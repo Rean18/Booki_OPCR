@@ -14,11 +14,10 @@
 }
 
 body {
+    width: 100%;
     max-width:1440px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    
+
 }
 
 header {
@@ -74,7 +73,7 @@ header {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0px 50px 0px 50px;
     box-sizing: border-box;
 }
 
@@ -496,9 +495,18 @@ form {
         max-width:1024px;
     }
     .header {
+    
         max-width: 1024px;
+        }
+
+
+    .menu-nav {
+        width: 450px;
+    
     }
 
+
+    
     .search {
         width: 100%;
         max-width: 924px;
@@ -683,7 +691,7 @@ form {
 
     body {
         width: 100%;
-        min-width: 320px;
+        max-width: 767.98px;
     }
 
     .main-container {
@@ -707,8 +715,11 @@ form {
         
     }
 
+    nav {
+        width: 100%;
+    }
     .menu-nav {
-       
+        width: auto;
         height: 19px;
         padding-left: 0;
         padding-top: 0;
@@ -722,6 +733,7 @@ form {
         width: 100%;
         height: 19px;
         display: flex;
+        padding: 0;
 
         
     }
@@ -741,8 +753,9 @@ form {
 
 
     .search {
+        width: 95%;
+        max-width: 767.98px;
         
-        padding: 0px 20px;
         
     }
 
@@ -837,6 +850,7 @@ form {
 
     .info {
         margin-top: 10px;
+        width: 90%;
     }
 
 
@@ -1007,8 +1021,11 @@ form {
         max-height: 141px;
     }
 
-    
+    footer {
+        margin: 0;
+    }
     .footer {
+        width: 100%;
         margin: auto;
         margin-top: 60px;
         max-height: 461px;
@@ -1019,12 +1036,13 @@ form {
     }
     
     .footer-column {
-        width: 100%;
+        width: 90%;
+        max-width: 767px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 0;
-        padding : 10px 0px 0px 25px;
+        margin: 0 ;
+        padding: 10px;
         
     }
     
@@ -1032,10 +1050,11 @@ form {
         font-size: 18px;
         font-weight: 700;
         margin-bottom: 0;
+        margin-top: 10px;
     }
     
     .footer ul {
-        padding-left: 0;
+        padding-left: 10px;
         list-style: none;
         font-size: 16px;
         font-weight: 400;
