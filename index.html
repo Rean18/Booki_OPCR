@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Raleway:wght@700&family=Young+Serif&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Raleway:wght@700&family=Young+Serif&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,8 +28,8 @@
             
             <nav>
                 <ul class ="menu-nav">
-                    <li>Hébergements</li>
-                    <li>Activités</li>
+                    <a href="#hebergements"><li>Hébergements</li></a>
+                    <a href="#activites"><li>Activités</li></a>
                 </ul>
             </nav>
         </header>
@@ -46,7 +46,7 @@
                       <p> <i class="fa-solid fa-location-dot" style="color: #000000;"></i> </p>
                     </div>
                     <div class="location-text">
-                      <input type="text" name="location" value="Marseille, France" id="location-text">
+                      <input type="text" name="location" placeholder="Marseille, France" id="location-text">
                     </div>
                     <div class="search-button">
                         <input type="button" value="Rechercher" id="search-button">
@@ -96,7 +96,7 @@
             </div>
 
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section class="hebergements" id="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
@@ -297,7 +297,7 @@
             </div>
 
            
-                <section class="activites">
+                <section class="activites" id="activites">
                     <h2>Activités à Marseille</h2>
                     <div class="activites-cards">
                             <a href="#">
