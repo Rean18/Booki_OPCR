@@ -9,6 +9,8 @@ Le projet Booki est un site web développé pour permettre aux usagers de trouve
 <h2>Technologie</h2>
 <b>HTML</b>: Utilisé pour la structure du site. <br>
 <b>CSS</b>: Employé pour styliser les pages web conformément aux maquettes fournies.
+<b>Git/GitHub :</b> Pour le versionnement du code et la collaboration.
+<b>VSCode :</b> IDE pour développer le site
 
 <h2>Fonctionnalités</h2>
 Adaptabilité : Le site est responsive, offrant une expérience utilisateur fluide sur tous les appareils.
